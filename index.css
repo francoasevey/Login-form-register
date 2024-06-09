@@ -85,7 +85,7 @@ header{
     align-items: center;
     overflow: hidden;
     transition: transform .5s ease height .2s ease;
-    transform: scale(1);
+    transform: scale(0);
 }
 .fondo.active-btn{
     transform: scale(1);
@@ -102,8 +102,13 @@ header{
     transform: translateX(0);
 }
 .fondo.active .contenedor-form.login{
-    transform: none;
+    transition: none;
     transform: translateX(-400px);
+}
+.fondo .contenedor-form.registrar{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
 }
 .fondo.active .contenedor-form.registrar{
     transition: transform .17s ease;
